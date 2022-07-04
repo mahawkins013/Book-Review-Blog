@@ -1,0 +1,132 @@
+.recent {
+    width: 95% !important;
+    height:350px;
+    margin: 0 10px;
+    background-color: #273C2C !important; 
+    border: 3px solid #DAD2BC;
+    display: flex;
+    flex-basis: content;
+    max-width: 1100px;  
+    opacity: 0.9;
+} 
+ 
+ body {
+    background-image: url("https://images.unsplash.com/photo-1488330890490-c291ecf62571?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80") !important;
+    font-family: Optima;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+h1, p {
+    text-align: center;
+}
+
+h1 {
+    color: #DAD2BC;
+    font-size: 40px;
+}
+
+p {
+    color: #DAD2BC;
+    text-shadow: 0em 0em 3px #CCA43B;
+    font-size: 1.3em;
+}
+
+figcaption {
+    color: #A99985;
+    text-align: end;
+    text-shadow: 0em 0em 3px #CCA43B;
+}
+
+legend {
+    font-size: 35px;
+    color: #DAD2BC;
+    padding-top: 3px;
+}
+
+
+#gallery {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly; 
+    max-width: 1130px;
+}
+
+#gallery img {
+    padding: 0 20px;
+}
+
+img, figure {
+    height: 90%; 
+}
+
+.current {
+    width: 50% !important;
+    height:350px;
+    margin: 0 10px;
+    background-color: #273C2C !important; 
+    border: 3px solid #DAD2BC;
+    display: flex;
+    flex-basis: content;
+    max-width: 565px; 
+    justify-content: center;
+    margin: auto;
+    opacity: 0.9;
+}
+
+#gallery2 {
+display: flex;
+flex-basis: content;
+flex-direction: row;
+align-items: center;
+justify-content: space-evenly;
+max-width: 750px;
+max-height: 350px;
+}
+
+#gallery2 img {
+    padding: 0 20px;
+    height: 90%;
+}
+
+ul {
+    font-size: 30px;
+    text-align: center;
+    color: #E5E5E5;
+    padding: 13px 0;
+}
+
+a.link {
+    color: #D6D6D6;
+    text-shadow: 0em 0em 2px #CCA43B;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #CCA43B;
+}
+
+a:visited {
+    color: #363636;
+}
+
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #273C2C;
+    height: 3em;
+    text-align: right;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+nav > a {
+    color: #DAD2BC !important;
+}
+
+nav > a:hover {
+    color: #A99985 !important;
+}
