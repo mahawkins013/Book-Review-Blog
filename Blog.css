@@ -1,107 +1,213 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Madison's Book Nook</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="Blog.css">
-        <link href="https://use.typekit.net/oov2wcw.css" rel="stylesheet" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <nav>
-            <a href="#starting-text">The Beginning</a>
-            <a href="#recent">Recent Reads</a>
-            <a href="#current">Currently Reading</a>
-            <a href="Black-Authors.html" target="_blank">Books I've Read By Black Authors</a>
-            <a href="Favorites.html" target="_blank">Favorite Books</a>
-            </nav>
+:root {
+    --main-text-color1: #CCA43B;
+    --main-text-color2: #DAD2BC;
+    --color1: #273C2C;
+    --color2: #A99985;
+}
 
-        <div class="title"></div><h1 id="title"><strong>Madison's Book Nook</h1></strong>
-        <h2 id="subtitle">Book Reviews from a Black Perspective</h2></div>
-        <div class="starting-text" id="starting-text">
-        <p>I've noticed in the past year, since joining several book club Discord servers and Goodreads groups, that outside of groups specifically aimed at either black membership or reading books by black authors, there is an overwhelmingly non-black presence in these clubs and groups. I am here to provide a black reader's perspective on some of the popular and some of the hardly heard of books, because I have seen a lack of and need for it. One book that inspired me to think this way was "No Exit" by Taylor Adams.</p>
-        <br><figure id="no-exit-cover"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1541624527l/39938177.jpg"><figcaption>Hovering between 1-2 Stars</figcaption></figure>
-        <p>I am tempted to rate this book 1 Star, but I currently have the rating on Goodreads as 2 as a reminder of the potential this book had and that the author so ridiculously chose to throw away. Let me explain:</p>
-        <blockquote>Please be aware, mild spoilers await you below</blockquote>
-        <p>This book started off interesting, even as it started off on a quickly freezing mountain-side road in a vehicle driven by the main character, Darby. A seemingly banal start, as far as books go, but Darby proved to be a gripping character. The suspense was on when we got to the rest stop where Darby and 4 other people had to wait out the snowstorm and bet on snowplows in order to leave. The backstory of all the characters ensued in well-crafted snippets that flowed into the storyline and served as explanations for current, past, or future actions or ways of thinking. It was in one of these snippets that Adams' irreparable blunder occured. He chose to haphazardly insert the N word into book - spelled out fully - only as a tool for painting a character as a racist bigot. The word served its purpose in that line alone, and then the story quite abruptly moved right along. It was so jarring I had to stop reading for a while. I decided to finish the book, but only out of a duty to report on my findings, and any other potential findings.</p>
-        <p>When I looked at a couple dozen reviews of this book on Goodreads, I didn't see any mention of this word, or anyone's objection to Taylor, a white male author, using it so tactlessly in his book for shock value. I realized that nobody from my book groups had warned me of this either, and notably, none of the people that had raved about the book and suggested it were black or of color.</p>
-            </div>
-        <fieldset id="recent"> 
-            <legend>Most Recent Reads:</legend>
-            <div id="gallery">
-            <figure class="recent-img"><a href="#slade-house"><img src="https://i.imgur.com/RB4dTUG.jpg" alt="A bright yellow cover with the title, 'Slade House' at the bottom of a pencil drawing of a spiraling staircase in the shape of a square, with the author's name 'David Mitchell' at the top of the square. A key turned down is on the left of the square and a key turned up is on the right of the square. There is a blurb about the book above the author's name."></a><figcaption>3 Stars</figcaption></figure>
-           <figure class="recent-img"><a href="#hench"><img src="https://i.imgur.com/c8HgyCf.jpg" alt="A dark red top third and a light red bottom two thirds of a book cover split by a diagonal backslash with a silhouette of a woman in th same light red color as the bottom standing with her arms at her sides and her shadow on the wall behind her standing with a cape. The title 'Hench' is in very big light blue letters, and the author's name 'Natalie Zina Walschots' is written in small yellow letters right above the title."></a><figcaption>4 Stars</figcaption></figure>
-            <figure class="recent-img"><a href="#siri"><img src="https://i.imgur.com/I7XGc1G.jpg" alt="Pink Book Cover with an animated woman with blonde hair up in a bun looking at a cell phone in her right hand with apprehension. The book title 'Siri, Who am I?' is displayed at the top and the author's name, 'Sam Tschida' is displayed in very small font in the bottom left."></a><figcaption>2.5 Stars</figcaption></figure>
-            <figure class="recent-img"><a href=#reckless-girls"><img src="https://i.imgur.com/Gqy0WPI.jpg" alt="A Bright Yellow book cover with 8 pink flowers scattered about and a single palm tree frond coming from the bottom right of the cover. The title 'Reckless Girls' and the author 'Rachel Hawkins' are displayed."></a><figcaption>3 Stars</figcaption></figure>
-            <figure class="recent-img"><a href="#boyfriend-material"><img src="https://i.imgur.com/bdgAVE9.jpg" alt="A white, red, and blue cover depicting white lines separating white outlines of different landmarks in London, with one man standing casually in the top left of the cover with dark gray ripped jeans and a black t-shirt, and another man standing with hands in the pockets of a gray suit with a red tie and black loafers"></a><figcaption>5 Stars</figcaption></figure>
-            
-            </div>
-        </fieldset>
+html {
+    font-family: Century-Gothic;
+    scroll-padding-top: 60px;
+}
 
-        <fieldset class="current" id="current">
-            <legend>Currently Reading</legend>
-            <div id="gallery2">
-                <figure class="current-img" id="good-girls-guide"><a href="https://www.goodreads.com/book/show/55371143-a-good-girl-s-guide-to-murder" target="_blank"><img src="https://i.imgur.com/PmNLsIj.jpg" alt="White cover with the title 'A Good Girl's Guide to Murder' in black casual script done in marker, with red string criss-crossing the cover suspended on multiple push-pins."></a><figcaption>17% (Audiobook)</figcaption></figure> 
-                <figure class="current-img" id="after-party"><a href="https://www.goodreads.com/book/show/57851555-the-after-party" target="_blank"><img src="https://i.imgur.com/5ymcK7C.jpg"></a><figcaption>39 / 339</figcaption></figure>  
-        </div>
-        </fieldset>
+body { 
+    background: url("https://wallpaperaccess.com/full/1516567.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
 
-        <div class="review-section">
-        <fieldset class="reviews" id="slade-house">
-            <h1><i>Slade House</i> by David Mitchell
-            <br><br>
-            <span class="rating">3 Stars</span></h1>
-            <p>What an absolute spiral of a story! Calling up memories of Junji Ito's Uzumaki).
-                I got it by the second or third part of the book, but was confused as to how these seemingly random short stories fit together at first. The book was a really quick listen (listened to the audiobook) and I enjoyed it, though I completely lost focus when <span class="spoiler">the backstory was being explained by who turned out to be a fake Fred Pink and was actually Jonah Grayer. As he explained everything that went into the creation of his and his sister's lacunah, I just could not get my mind to focus or be interested in the words. I caught the important bits that were necessary to understanding the book, but most of that section was lost on me. This contributed highly to my rating of 3 out of 5, as a significant portion of the book was uninteresting to me.</span>
-                I also thought the stories could have been melded together a bit better as far as the sharp stops at the end of each one, but that's just me. Overall a good read, but not great for me.</p>
-        </fieldset>
-        
-        <fieldset class="reviews" id="hench">
-            <h1><i>Hench</i> by Natalie Zina Walschots<br><br>
-                <span class="rating">4 Stars</span></h1>
-            
-            <p>This was a weirdly slow read even though I really enjoyed the main character and the premise of the book - Henches that essentially act as the Villain equivalent of sidekicks for Superheroes, though largely doing behind-the-scenes work. I loved the sense of justice that fueled the story and the main character's (Anna's) journey, <span class="spoiler">being caught in the cross-fire of the biggest Superhero of the time, Supercollider, and in one careless move, having her leg broken in a way that would never heal completely to its original state.</span>
+nav {
+    position: sticky;
+    position: --webkit-sticky;
+    top: 0;
+    background-color: rgba(218, 219, 188, 90%);
+    height: 3em;
+    text-align: right;
+    border-radius: 5px;
+    z-index: 2;
+    opacity: 0.8;
+}
 
-            I did think the story dragged on at times which caused me to read and finish several other books in between reading this one. The romantic interest Anna had in <span class="spoiler">Leviathan started to creep up on you and it seemed to come out of nowhere. I really expected it to go somewhere by the time I got to the end of the book, and especially once Leviathan was rescued from Supercollider's grasp after he had been captured and his death faked. But it went absolutely nowhere, and while Leviathan was captured and one of his long-time arch nemeses, Quantum Entanglement (formerly Supercollider's sidekick) is realizing that Anna loves Leviathan, Anna is going on about how she thinks there may be a budding romance with Quantum in her mind. This is not an entirely unrealistic scenario, it just felt a little lackluster. And to top it all off, the 'relationship' with Quantum went nowhere as well, as she fled as soon as she realized that Leviathan was still alive.</span>
+nav a {
+    color: var(--color1);
+}
 
-            So the book was good and had a glorious ending battle scene full of justice, the book had some elements that don't seem to have been fully thought out. I am interested in reading the sequel to this book though, should one ever come about.</p>
-        </fieldset>
+nav a:hover {
+    color: var(--main-text-color2);
+    background-color: var(--color1);
+}
 
-        <fieldset class="reviews" id="siri">
-            <h1><i>Siri, Who Am I?</i> by Sam Tschida<br><br>
-            <span class="rating">2.5 Stars</span></h1>
-            
-        <p>I give this a 2.5 out of 5. The story was okay, easy to predict the basic structure and even some specifics of the relationships between characters and what was going to unfold next. Which is a disappointment because the story framework was an original one for me. Ultimately though, it turned out to be a classic 'character loses memory and finds her true self' trope.
+#title, #subtitle {
+    color: var(--main-text-color1);
+    text-align: center;
+    font-family: Courier;
+}
 
-        I absolutely hated that the secondary main character, Max, a black male scientist, was constantly put in the position of pointing out or mildly explaining why something would be an issue for him because he was black, something the white female main character had simply not taken the time to think about, and yet she was just constantly brushing him off and/or only replying in a way that included them both and ignored his specific concerns. Trying to explain this without specifics/spoilers is a bit of a task, so here's an example... <span class="spoiler">When Mia hatches a plan to find someone to fill in for a date on her matchmaking service (the person she previously set the man up with didn't want to go anymore and it was a blind date) by crashing a casting call and just chatting up random women there, Max brings up the fact that it would already be creepy for her to do, butpeople would be especially suspicious of him going in as a black male, and it would likely end badly. She responds by either saying or thinking (I can't remember which, perhaps a mix) that he's right, it would be weird for either of them to do it. The fact that he's bringing up a specific racial concern just blows right past her. This is probably the most minor example in the book, just given to show an example as I can't remember most of the others ((hint that this book wasn't all that memorable)).</span>
-                
-        As mentioned in my spoiler, for many reasons this book just wasn't memorable. I won't be returning to it in the future and I'm not inspired to read more of Tschida's works. I'm not incredibly into romcoms anyway, but was inspired to read this one based on what I thought would be a heavy tech influence in the story based on the title. <span class="spoiler">The influence of tech was limited to Mia asking siri what her name was quite soon after waking up in the hospital with no memory of who she was or what landed her in the hospital to begin with). The rest of the story hardly involved tech, save for Max's experiments to build a functioning lie detector helmet.</span>
-                
-        The character progression was okay, but incredibly basic and really only worked because of the memory loss in my opinion. Which is the whole point of the book, granted, but I just feel as though once this character gets all her memories back, she might discard a lot, if not all, of the progress and changes she made during her period of memory lost post-accident.</p>
-        </fieldset>
+#title {
+    font-size: 3.5em;
+    font-family: Century;
+}
 
-        <fieldset class="reviews" id="reckless-girls">
-            <h1><i>Reckless Girls</i> by Rachel Hawkins<br><br>
-                <span class="rating">3 Stars</span></h1>
-            
-            <p>This was a quick read! But it was an easy read, not an incredibly exciting read. I saw that it was rated as gothic moments before starting to listen to the audiobook, and gothic, slow burns are just not my cup of tea. But I had pretty much committed, and I enjoyed The Wife Upstairs, so I decided to listen to it anyway.
+#subtitle {
+    font-size: 2.2em;
+    font-weight:400;
+    
+}
 
-            The character development was great, and I enjoyed figuring out who Lux, Amma, and Brittany through the alternating POVs. I did think that while there were a couple of twists I didn't see coming, most of the turns were pretty predictable in a fairly banal way. I found the ending to be especially...well if you've seen Lifetime Movies, that was my first thought about the way the book ended <span class="spoiler">with Luxe taking the opportunity to start a new life with Jake's money and resources, and going on to help some unfortunate woman in a bar in the same situation she was in only weeks or months before, starting the cycle all over again that began the story. Which is pretty pointless, seeing as she should be staying under the radar considering she murdered two people, took their cash, boat, and drugs, and fled from the police, letting them think she died with the rest of the group on the island.</span>
-                
-            I did like the pacing, and thought the story moved along at just the right pace, not too slow or too fast. The setting was interesting as well - Meroe Island. The loer and bad vibes surrounding it kept me interested in what was going to happen on the island, but in the end nothing that happened ended up being the result of the insidiousness the author built up around the island throughout the book. <span class="spoiler">All of the deaths ended up being largely to do with careful planning of revenge plots and partially to do with Luxe having to make choices - first Jake or Eliza, then saving Jake and taking him with her or going the journey alone with his boat and money. It was a letdown that there weren't more elements of (even mild!) paranormal mystery surrounding the island and the events that took place on it.</span>
-                
-             I didn't think it was a terrible read, I just thought it was predictable and nothing incredibly original.</p>
-        </fieldset>
+#starting-text {
+    width: 95%;
+    border-radius: 10px;
+    background-color: var(--color1);
+    opacity: 0.8;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    color: var(--main-text-color2);
+}
 
-        <fieldset class="reviews" id="boyfriend-material">
-            <h1><i>Boyfriend Material</i> by Alexis Hall<br><br>
-                <span class="rating">5 Stars</span></h1>
-           
-            <p>I read this part as part of a book swap, and one of my immediate thoughts was 'oh gosh, a romance book while I'm still partially in a reading slump'. I'm not huge on romance reading, as anyone could see from my profile. Far from it, preferring psychological thrillers, horror, mystery, and the macabre above all else. But I absolutely LOVED this book. I loved the main character Lucien, and the co-main character Oliver, and I just loved the whole story, character development, the push and pull of Lucien and Oliver's relationship. Everything was lovely and I found myself smiling and rooting for them the whole way. I'm so excited for the sequel actually! Which is wild because one of my other thoughts was 'a book in a series?!' because I tend to stay away from series for the most part. Anyway, if you're on the fence about reading this book, read it!</p>
-        </fieldset>
-        </div>
+#starting-text p {
+    text-indent: 25px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
-        
-    </body>
-    </html>
+
+#no-exit-cover {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;     
+}
+
+#no-exit-cover img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: grayscale(80%);
+}
+
+figcaption {
+    text-align: center;
+    color: var(--main-text-color1);
+    font-size: 1.2em;
+}
+
+blockquote {
+    border-top: 2px solid var(--main-text-color2);
+    border-bottom: 2px solid var(--main-text-color2);
+    color: var(--main-text-color1);
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+legend {
+    font-size: 2em;
+    font-family: Courier;
+    color: var(--main-text-color1);
+}
+
+#recent {
+    background-color: var(--color1);
+    border-radius: 10px;
+    opacity: 0.9;
+    color: var(--main-text-color2);
+    width: 95%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#recent figure {
+ display: block;
+}
+
+#recent figcaption {
+    text-align: center;
+}
+
+#recent-img {
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+}
+
+#current {
+    width: 85%;
+    background-color: var(--color1);
+    display: flex;
+    opacity: 0.9;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+#current figure {
+    display: block;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+#current figcaption {
+    text-align: center;
+}
+
+#gallery2 {
+    display: flex;
+}
+
+.review-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.reviews {
+    width: 40%;
+    height: auto;
+    background-color: var(--color1);
+    opacity: 0.9;
+    color: var(--main-text-color2);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.reviews h1 {
+    color: var(--main-text-color1);
+    font-family: Courier;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+
+.reviews p {
+    text-indent: 15px;
+}
+
+.spoiler {
+    color: black;
+    background: black;
+}
+
+.spoiler:hover {
+    background: black;
+    color: var(--main-text-color2);
+}
