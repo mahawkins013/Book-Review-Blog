@@ -130,8 +130,8 @@ legend {
     text-align: center;
 }
 
-#recent-img {
-    width: 20%;
+#recent-img img {
+    width: 15%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
