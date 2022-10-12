@@ -3,6 +3,7 @@
     --main-text-color2: #DAD2BC;
     --color1: #273C2C;
     --color2: #A99985;
+    --color3: #224634;
 }
 
 body {
@@ -15,35 +16,61 @@ h1 {
 }
 
 .black-auth-gallery {
-    background-color: var(--color1);
-    border-radius: 10px;
+    background-color: var(--color3);
     opacity: 0.9;
-    color: var(--main-text-color2);
+    display: flex;
     width: 95%;
-    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
+    
 }
 
 .black-auth-gallery figure {
     display: block;
 }
 
-.black-auth-gallery figcaption {
-   text-align: center;
+#gallery {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
 }
 
-.gallery {
+.black-auth-img {
+    width: 95%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly; 
+}
+
+figure {
+    width: 265px;
 }
 
 figcaption {
     text-align: center;
     color: var(--main-text-color1);
     font-size: 1.2em;
+    
+}
+
+.reviews {
+    background-color: var(--color1);
+    opacity: 0.9;
+}
+
+p {
+    text-align: center;
+    color: var(--main-text-color1);
+    font-size: 1.3em;
+}
+
+.spoiler {
+    color: black;
+    background-color: black;
+}
+
+.spoiler:hover {
+    color: var(--main-text-color2);
+    background-color: black;
 }
