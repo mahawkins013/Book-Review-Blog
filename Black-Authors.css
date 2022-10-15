@@ -1,13 +1,15 @@
 :root {
-    --main-text-color1: #CCA43B;
+    --main-text-color1: #c59254;
     --main-text-color2: #DAD2BC;
     --color1: #273C2C;
     --color2: #A99985;
     --color3: #224634;
+    --color4: #284B5D;
 }
 
 body {
-    background: url("https://images.unsplash.com/photo-1488330890490-c291ecf62571?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80") no-repeat center center fixed;
+    /* background: url("https://images.unsplash.com/photo-1488330890490-c291ecf62571?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80") no-repeat center center fixed;  */
+   background: url("https://i.imgur.com/iD1abTn.jpg") no-repeat center center fixed; 
 }
 
 h1 {
@@ -16,13 +18,17 @@ h1 {
 }
 
 .black-auth-gallery {
-    background-color: var(--color3);
+    background-color: var(--color4);
     opacity: 0.9;
     display: flex;
     width: 95%;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
     
 }
 
@@ -30,33 +36,49 @@ h1 {
     display: block;
 }
 
+.black-auth-img img {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
 #gallery {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: baseline;
 }
 
-.black-auth-img {
-    width: 95%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-figure {
+/* figure { 
     width: 265px;
-}
+}  - not sure if this is actually needed*/
 
 figcaption {
     text-align: center;
     color: var(--main-text-color1);
-    font-size: 1.2em;
-    
+    font-size: 1.3em; 
+}
+.review-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .reviews {
-    background-color: var(--color1);
+    background-color: var(--color4);
     opacity: 0.9;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 p {
