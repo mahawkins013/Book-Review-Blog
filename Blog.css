@@ -189,13 +189,18 @@ legend {
     margin-bottom: 15px;
 }
 
-.reviews h1 {
+.reviews h2 {
     color: var(--main-text-color1);
     font-family: Courier;
     font-weight: normal;
     text-align: center;
 }
 
+.reviews h3 {
+    color: var(--color2);
+    font-family: Courier;
+    text-align: center;
+}
 
 
 .reviews p {
