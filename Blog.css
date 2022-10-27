@@ -211,6 +211,9 @@ legend {
     margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
+    font-family: Courier;
+    font-weight: normal;
+    font-size: 22px;
 }
 
 
